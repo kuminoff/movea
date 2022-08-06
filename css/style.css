@@ -1,3 +1,6 @@
+.main-display__trailer:after {
+}
+
 *,
 *::before,
 *::after {
@@ -172,8 +175,7 @@ input {
   background-position: center;
   border-radius: 1.6rem;
   padding: 1.9rem;
-  box-shadow: 0 0 0 120rem rgba(0, 0, 0, 0.3) inset;
-  text-shadow: 0.5px 0.5px 2px black;
+  text-shadow: 0.8px 0.8px 3px black;
 }
 
 .main-display__view {
@@ -182,9 +184,9 @@ input {
   line-height: 119%;
 }
 
-.main-sisplay__header {
+.main-display__header {
   font-weight: 700;
-  font-size: 2.4rem;
+  font-size: 3rem;
   line-height: 150%;
 }
 
@@ -266,11 +268,11 @@ input {
   padding-right: 4.4rem;
 }
 
-.trending__item1 {
+.trending__item-one {
   background: url('../img/purgatory.jpg');
 }
 
-.trending__item2 {
+.trending__item-two {
   background: url('../img/red.jpg');
 }
 
@@ -284,7 +286,6 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-  box-shadow: 0 0 0 120rem rgba(0, 0, 0, 0.3) inset;
 }
 
 .trending__plash {
@@ -328,14 +329,14 @@ input {
 
 .trending__header {
   font-weight: 700;
-  font-size: 1.5rem;
+  font-size: 2rem;
   line-height: 150%;
   text-shadow: 0.5px 0.5px 2px black;
 }
 
-.teandung__date {
+.treandung__date {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.2rem;
   line-height: 120%;
 }
 
@@ -348,15 +349,16 @@ input {
   border-radius: 1.6rem;
   font-weight: 500;
 }
-.popular__item1 {
+
+.popular__item-one {
   background: url('../img/come.jpg');
 }
 
-.popular__item2 {
+.popular__item-two {
   background: url('../img/vietnam.jpg');
 }
 
-.popular__item3 {
+.popular__item-three {
   background: url('../img/jojo.jpg');
 }
 
@@ -370,7 +372,6 @@ input {
   background-size: cover;
   background-position: center;
   text-shadow: 1px 1px 2px black;
-  box-shadow: 0 0 0 120rem rgba(0, 0, 0, 0.3) inset;
 }
 
 .small-plus {
@@ -386,13 +387,13 @@ input {
 
 .popular__header {
   font-weight: 700;
-  font-size: 1rem;
+  font-size: 1.3rem;
   line-height: 120%;
 }
 
 .popular__date {
   font-weight: 700;
-  font-size: 0.8rem;
+  font-size: 0.9rem;
   line-height: 113%;
 }
 
@@ -407,7 +408,180 @@ input {
   line-height: 120%;
 }
 
+.aside {
+  padding-right: 5.9rem;
+}
+
+.aside__title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 2.6rem;
+}
+
+.aside__header {
+  font-size: 2rem;
+  line-height: 115%;
+}
+
+.aside__sort {
+  display: flex;
+}
+
+.aside__sort-text {
+  font-size: 1.4rem;
+  line-height: 114%;
+  color: rgba(255, 255, 255, 0.4);
+  padding-right: 1.5rem;
+}
+
+.aside__sort-select {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+.aside__sort-select span {
+  font-size: 1.4rem;
+  line-height: 114%;
+}
+
+.aside__sort-img {
+  display: flex;
+  flex-direction: column;
+  margin-left: 0.4rem;
+}
+
+.aside__sort-img img {
+  width: 0.7rem;
+  height: 0.7rem;
+  cursor: pointer;
+}
+
+.aside__sort-img img:nth-child(1) {
+  margin-bottom: 0.3rem;
+}
+
+.aside__item-one {
+  background: url('../img/batman.jpg');
+  text-shadow: 0.8px 0.8px 3px black;
+}
+
+.aside__item-two {
+  background: url('../img/morbius.jpg');
+  text-shadow: 0.8px 0.8px 3px black;
+}
+
+.aside__item {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  height: 22.6rem;
+  border-radius: 1.6rem;
+  padding: 1.9rem 0 1.9rem 1.9rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+.aside__item:nth-child(2) {
+  margin-bottom: 3rem;
+}
+
+.aside__item:nth-child(3) {
+  margin-top: 3rem;
+  margin-bottom: 4rem;
+}
+
+.aside__views {
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 119%;
+}
+
+.aside__item-name {
+  margin-bottom: 0.5rem;
+  font-weight: 700;
+  font-size: 2.4rem;
+  line-height: 117%;
+}
+
+.aside__item-date {
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 114%;
+}
+
+.aside__botton {
+  padding: 2.5rem 0 2rem 0s;
+}
+.aside__favourite {
+  margin-bottom: 3rem;
+}
+.aside__favourite-text {
+  font-size: 2rem;
+  line-height: 115%;
+  margin-bottom: 2rem;
+}
+
+.aside__gende-items {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: space-between;
+  padding-right: 5rem;
+}
+
+.aside__gende {
+  font-size: 1.2rem;
+  line-height: 117%;
+  padding: 0.5rem 1rem;
+  border-radius: 3rem;
+  margin-bottom: 2rem;
+  margin-right: 3rem;
+  cursor: pointer;
+}
+
+.perple {
+  background: #8066f6;
+}
+
+.orange {
+  background: #e1784f;
+}
+
+.green {
+  background: #63cfe1;
+}
+
+.aside__add {
+  display: flex;
+  margin-bottom: 2rem;
+  font-size: 1.4rem;
+  line-height: 114%;
+  cursor: pointer;
+}
+
+.aside__add-round {
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #2b2a2f;
+  margin-right: 0.5rem;
+}
+
+.gray {
+  background: #2b2a2f;
+}
+
 /* сетка */
+
+.film__trailer {
+  box-shadow: 0 0 0 120rem rgba(0, 0, 0, 0.3) inset;
+}
 
 @media (max-width: 108em) {
   html {
