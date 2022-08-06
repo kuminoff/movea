@@ -1,6 +1,3 @@
-.main-display__trailer:after {
-}
-
 *,
 *::before,
 *::after {
@@ -74,7 +71,7 @@ input {
     'my-aside my-main my-main' /* блок боковой областью и основной частью */
     'my-aside my-main my-main'; /* блок боковой областью и основной частью */
   grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr)); /*  */
-  gap: 8rem 0; /* растояние между блоками внутри тега grid */ /* rem - это 10px */
+  gap: 3rem 0; /* растояние между блоками внутри тега grid */ /* rem - это 10px */
 }
 
 .grid-init {
@@ -160,6 +157,10 @@ input {
   background-repeat: no-repeat;
   background-size: cover;
   cursor: pointer;
+}
+
+.main {
+  padding-top: 5rem;
 }
 
 .main-display__trailer {
@@ -338,6 +339,7 @@ input {
   font-weight: 700;
   font-size: 1.2rem;
   line-height: 120%;
+  text-shadow: 0.5px 0.5px 2px black;
 }
 
 .trending__time {
@@ -410,6 +412,32 @@ input {
 
 .aside {
   padding-right: 5.9rem;
+  position: relative;
+}
+
+.aside:after {
+  content: url('../img/roll_up.svg');
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 2.2rem;
+  height: 2.6rem;
+  background: #fcfcfe;
+  border-radius: 2rem;
+  position: absolute;
+  top: 10.7rem;
+  right: 5rem;
+}
+
+.aside__wrap {
+  background: rgba(255, 255, 255, 0.02);
+  margin-left: -2.4rem;
+}
+
+.aside__top {
+  padding: 5rem 2.3rem 4rem 2.4rem;
+  background: #1e1e1e;
+  border-right: 0.2rem solid #222222;
 }
 
 .aside__title {
@@ -491,7 +519,7 @@ input {
 
 .aside__item:nth-child(3) {
   margin-top: 3rem;
-  margin-bottom: 4rem;
+  /* margin-bottom: 4rem; */
 }
 
 .aside__views {
@@ -514,11 +542,29 @@ input {
 }
 
 .aside__botton {
-  padding: 2.5rem 0 2rem 0s;
+  padding: 2.5rem 0 2rem 2.4rem;
 }
+
+.aside__footer-botton {
+  position: relative;
+}
+
+.aside__footer-botton:before {
+  content: '';
+  display: block;
+  width: 30rem;
+  height: 0.1rem;
+  background-color: #2b2a2f;
+  position: absolute;
+  top: -30%;
+  left: 0;
+  transform: translate(0, 50%);
+}
+
 .aside__favourite {
   margin-bottom: 3rem;
 }
+
 .aside__favourite-text {
   font-size: 2rem;
   line-height: 115%;
@@ -577,11 +623,11 @@ input {
   background: #2b2a2f;
 }
 
-/* сетка */
-
 .film__trailer {
   box-shadow: 0 0 0 120rem rgba(0, 0, 0, 0.3) inset;
 }
+
+/* сетка */
 
 @media (max-width: 108em) {
   html {
